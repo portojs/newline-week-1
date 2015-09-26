@@ -8,12 +8,6 @@
     background-color: lightyellow;
     height: 500px;
 }
-#about_us_page {
-    display: none;
-}
-#to_the_moon_page {
-    display: none;
-}
-#contacts_page {
+.hidden_page {
     display: none;
 }
