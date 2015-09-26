@@ -1,6 +1,13 @@
 #first_column {
     background-color: lightblue;
+    height: 500px;
+    font-size: 14pt;
+    font-family: "Bookman", Georgia, "Times New Roman", serif;
 }
 #second_column {
     background-color: lightyellow;
+    height: 500px;
+}
+#about_us_page {
+    display: none;
 }
