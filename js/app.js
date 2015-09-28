@@ -19,7 +19,17 @@ function PageNavigation() {
     };
     this.showAddPage = function() {
         if ($(this).hasClass("our_mission")) {
-            $(this).closest(".main_body").find()
+            $(this).closest(".main_body").find("#our_future_add").hide();
+            $(this).closest(".main_body").find("#our_sponsors_add").hide();
+            $(this).closest(".main_body").find("#our_mission_add").fadeIn();
+        } else if ($(this).hasClass("our_sponsors")) {
+            $(this).closest(".main_body").find("#our_future_add").hide();
+            $(this).closest(".main_body").find("#our_mission_add").hide();
+            $(this).closest(".main_body").find("#our_sponsors_add").fadeIn();
+        } else if ($(this).hasClass("our_future")) {
+            $(this).closest(".main_body").find("#our_sponsors_add").hide();
+            $(this).closest(".main_body").find("#our_mission_add").hide();
+            $(this).closest(".main_body").find("#our_future_add").fadeIn();
         }
     };
     $(".header").on("click.show_page", ".button", this.showPage);
