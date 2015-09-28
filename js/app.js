@@ -32,6 +32,18 @@ function PageNavigation() {
             $(this).closest(".main_body").find("#our_future_add").fadeIn();
         }
     };
+    this.hideFirstColumn = function() {
+        var first_column = $("#first_column");
+        first_column.find("#to_the_moon_page").hide();
+        first_column.find("#contacts_page").hide();
+        first_column.find("#about_us_page").hide();
+    };
+    this.hideSecondColumn = function() {
+        var second_column = $("#second_column");
+        second_column.find("#our_mission_add").hide();
+        second_column.find("#our_future_add").hide();
+        second_column.find("#our_sponsors_add").hide();
+    };
     $(".header").on("click.show_page", ".button", this.showPage);
     $(".about_us_page_list").on("click.show_add", "li", this.showAddPage);
 }
