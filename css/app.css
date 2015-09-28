@@ -11,3 +11,7 @@
 .hidden_page {
     display: none;
 }
+.about_us_page_list li:hover {
+    background-color: darkcyan;
+    color: white;
+}
